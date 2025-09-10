@@ -1,0 +1,19 @@
+{
+  "name": "flowbit_ai",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm --workspace=@invoice/api dev",
+    "dev:web": "npm --workspace=@invoice/web dev",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\""
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
